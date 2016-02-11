@@ -1,0 +1,41 @@
+{
+  "name": "fpl-github",
+  "version": "1.0.0",
+  "description": "Given a GitHub user, get user favourite programming language",
+  "main": "cli.js",
+  "scripts": {
+    "start": "./bin/fpl.js ",
+    "test": "./node_modules/mocha/bin/mocha test --recursive",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha test/**/* --include-all-sources -- -R spec",
+    "eslint": "./node_modules/eslint/bin/eslint.js ."
+  },
+  "bin": {
+    "fpl": "./bin/fpl.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kumjami/favourite-programming-language.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Programming languages"
+  ],
+  "author": "Marcelo José Gómez Conesa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kumjami/favourite-programming-language/issues"
+  },
+  "homepage": "https://github.com/Kumjami/favourite-programming-language#readme",
+  "dependencies": {
+    "github": "^0.2.4",
+    "lodash": "^4.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "rewire": "^2.5.1",
+    "sinon": "^1.17.3"
+  }
+}
